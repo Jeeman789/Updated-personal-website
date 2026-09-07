@@ -1,0 +1,33 @@
+.container-grounds{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.background, .foreground{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.background{
+    width: 100vw;
+    height: 100vw;
+}
+
+.foreground{
+    width: 100vw;
+    height: 100vw;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
