@@ -1,4 +1,9 @@
+@import url('https://googleapis.com');
+
 .container-grounds{
+    padding: 0%;
+    height:max-content;
+    width: max-content;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -11,23 +16,60 @@
 
 .background{
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+#about-button{
+    width: 50vw;
+    height: 100vh;
+    background-color: #BC0808;
+}
+
+#right-side{
+    width: 50vw;
+    height: 100vh;
+    
+    flex-direction: column;
+}
+
+#projects-button{
+    width: 50vw;
+    height: 50vh;
+    background-color: #198C15;
+}
+
+#contact-button{
+    width: 50vw;
+    height: 50vh;
+    background-color: #D0B219;
 }
 
 .foreground{
     width: 100vw;
-    height: 100vw;
-}
-
-.circle{
-    width: 100px;
-    height: 100px;
-    background-color: #D9D9D9;
-    border-radius: 50%;
+    height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-family: sans-serif;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    border: 20px solid black;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font: 'Oswald', sans-serif;
 }
