@@ -1,12 +1,14 @@
 @import url('https://googleapis.com');
 
 .container-grounds{
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     height:max-content;
     width: max-content;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    font-family: 'Oswald', sans-serif;
 }
 
 .background, .foreground{
@@ -26,6 +28,7 @@
     width: 50vw;
     height: 100vh;
     background-color: #BC0808;
+    border: 20px solid black;
 }
 
 #right-side{
@@ -39,12 +42,14 @@
     width: 50vw;
     height: 50vh;
     background-color: #198C15;
+    border: 20px solid black;
 }
 
 #contact-button{
     width: 50vw;
     height: 50vh;
     background-color: #D0B219;
+    border: 20px solid black;
 }
 
 .foreground{
@@ -67,9 +72,30 @@
     border: 20px solid black;
 }
 
-.title{
+#title{
+    padding-top: 25px;
+    text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    font: 'Oswald', sans-serif;
+}
+
+#title h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 70px;
+    -webkit-text-stroke: 10px black; 
+    paint-order: stroke fill;
+}
+
+#title p{
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#second-sentence{
+    width: 12vw;
 }
