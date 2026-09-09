@@ -6,23 +6,27 @@ function Home(){
         <div className='container-grounds'>
             <div className='background'>
                 <div id='about-button'>
-                    <h5>
+                    <h5 className='about-text'>
                         ABOUT
                     </h5>
                 </div>
                 <div id='right-side'>
                     <div id='projects-button'>
-                        PROJECTS
+                        <h4 className="white-title right-text">
+                            PROJECTS
+                        </h4>
                     </div>
                     <div id='contact-button'>
-                        CONTACT
+                        <h4 className="white-title right-text">
+                            CONTACT
+                        </h4>
                     </div>
                 </div>
             </div>
             <div className='foreground'>
                 <div className='circle'>
                     <div id='title'>
-                        <h4>Welcome</h4>
+                        <h4 className='white-title'>Welcome</h4>
                         <p>
                             Hello! This is the website of Gavin Lacy
                         </p>
