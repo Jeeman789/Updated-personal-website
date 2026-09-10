@@ -26,30 +26,6 @@
     justify-content: left;
 }
 
-.about-text{
-    color: white;
-    text-shadow: 2px 15px 4px rgba(0, 0, 0, 0.5);
-    -webkit-text-stroke: 13px black; 
-    paint-order: stroke fill;
-    font-size: 90px;
-
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
-
-.right-text{
-    margin-right: 20px;
-    margin-bottom: 15px;
-}
-
-.white-title{
-    color: white;
-    text-shadow: -2px 12px 4px rgba(0, 0, 0, 0.5);
-    -webkit-text-stroke: 10px black; 
-    paint-order: stroke fill;
-    font-size: 70px;
-}
-
 #about-button{
     border-style: solid;
     border-color: black;
@@ -67,6 +43,11 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+}
+
+.right-text{
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
 
 #right-side{
@@ -139,19 +120,4 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-#title h4{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-#title p{
-    font-size: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-#second-sentence{
-    width: 12vw;
 }

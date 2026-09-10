@@ -1,23 +1,24 @@
 import { useState } from 'react'
 import '../css/Home.css'
+import '../css/Text.css'
 
 function Home(){
     return(
         <div className='container-grounds'>
             <div className='background'>
                 <div id='about-button'>
-                    <h5 className='about-text'>
+                    <h5 className='big-text'>
                         ABOUT
                     </h5>
                 </div>
                 <div id='right-side'>
                     <div id='projects-button'>
-                        <h4 className="white-title right-text">
+                        <h4 className="medium-text right-text">
                             PROJECTS
                         </h4>
                     </div>
                     <div id='contact-button'>
-                        <h4 className="white-title right-text">
+                        <h4 className="medium-text right-text">
                             CONTACT
                         </h4>
                     </div>
@@ -26,7 +27,7 @@ function Home(){
             <div className='foreground'>
                 <div className='circle'>
                     <div id='title'>
-                        <h4 className='white-title'>Welcome</h4>
+                        <h4 className='medium-text'>Welcome</h4>
                         <p>
                             Hello! This is the website of Gavin Lacy
                         </p>

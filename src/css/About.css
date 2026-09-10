@@ -1,9 +1,12 @@
+@import url('https://googleapis.com');
+
 .about-back{
     background-color: #FF8D8D;
 }
 
 .about{
     background-color: #BC0808;
+    font-family: 'Oswald', sans-serif;
 }
 
 .top-bar{
@@ -13,6 +16,18 @@
     border-style: solid;
     border-color: black;
     border-width: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h5{
+        font-size: 80px;
+        margin: 0%;
+        margin-bottom: 10px;
+    }
+}
+
+.empty-space-topbar{
+    width: 60vw;
 }
 
 .empty-space{
