@@ -1,0 +1,30 @@
+.about-back{
+    background-color: #FF8D8D;
+}
+
+.about{
+    background-color: #BC0808;
+}
+
+.top-bar{
+    width: calc(100vw - 40px);
+    height: calc(20vh - 40px);
+
+    border-style: solid;
+    border-color: black;
+    border-width: 20px;
+}
+
+.empty-space{
+    width: 100vw;
+    height: 20vh;
+}
+
+.content{
+    width: calc(100vw - 40px);
+    height: calc(60vh - 40px);
+
+    border-style: solid;
+    border-color: black;
+    border-width: 20px;
+}
