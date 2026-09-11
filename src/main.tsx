@@ -5,7 +5,6 @@ import About from './pages/About.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <>
-  <Home />
   <About />
   </>
 )

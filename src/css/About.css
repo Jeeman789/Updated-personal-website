@@ -48,4 +48,9 @@
     border-style: solid;
     border-color: black;
     border-width: 20px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
 }
