@@ -1,0 +1,14 @@
+@import url('https://googleapis.com');
+
+.projects-back{
+    background-color: #ACCEAA;
+    width: 100%;
+    min-width: 1200px;
+    height: max(100vh, 700px);
+    min-height: 700px;
+}
+
+.projects{
+    background-color: #198C15;
+    font-family: 'Oswald', sans-serif;
+}

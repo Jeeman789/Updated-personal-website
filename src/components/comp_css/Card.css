@@ -46,7 +46,8 @@
 }
 
 .card-image{
-    width: 13%;
+    width: 11%;
+    margin-top: 10px;
     max-width: 200px;
     min-width: 0;
     aspect-ratio: 1;
@@ -67,6 +68,8 @@
 
     p{
         color: #EEEEEE;
-        margin: 10px;
+        margin-left: 25px;
+        margin-top: 0px;
+        white-space: pre-line;
     }
 }
