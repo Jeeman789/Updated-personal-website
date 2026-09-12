@@ -39,5 +39,5 @@
     align-items: center;
     overflow-y: auto;
     scrollbar-color: black rgba(0,0,0,0);
-    scrollbar-width: 50px;
+    scrollbar-width: auto;
 }

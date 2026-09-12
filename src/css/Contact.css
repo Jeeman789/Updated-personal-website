@@ -1,0 +1,34 @@
+@import url('https://googleapis.com');
+
+.contact-back{
+    background-color: #E8DA96;
+    width: 100%;
+    min-width: 1200px;
+    height: max(100vh, 700px);
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact{
+    background-color: #D0B219;
+    font-family: 'Oswald', sans-serif;
+}
+
+.content-o{
+    box-sizing: border-box;
+    width: 80%;
+    height: 60%;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 20px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-color: black rgba(0,0,0,0);
+    scrollbar-width: auto;
+}
