@@ -1,27 +1,30 @@
 import '../css/Home.css'
 import '../css/Text.css'
+import '../css/Links.css'
+import { Outlet, Link } from 'react-router';
 
 function Home(){
     return(
         <div className='container-grounds'>
             <div className='background'>
                 <div id='about-button'>
-                    <h5 className='big-text'>
+                    <Link to='/About' className='big-text'>
                         ABOUT
-                    </h5>
+                    </Link>
                 </div>
                 <div id='right-side'>
                     <div id='projects-button'>
-                        <h4 className="medium-text right-text">
+                        <Link to='/Projects' className="medium-text right-text">
                             PROJECTS
-                        </h4>
+                        </Link>
                     </div>
                     <div id='contact-button'>
-                        <h4 className="medium-text right-text">
+                        <Link to='/Contact' className="medium-text right-text">
                             CONTACT
-                        </h4>
+                        </Link>
                     </div>
                 </div>
+                <Outlet />
             </div>
             <div className='foreground'>
                 <div className='circle'>
