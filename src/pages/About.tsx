@@ -1,6 +1,7 @@
 import '../css/About.css'
 import '../css/Other_Pages.css'
 import '../css/Text.css'
+import { Outlet, Link } from 'react-router';
 import Card from '../components/Card'
 import carfax from '../assets/entry-images/carfax.png'
 import personal from '../assets/entry-images/personal.jpg'
@@ -13,8 +14,11 @@ function About(){
             <div className='top-bar about'>
                 <h5 className='big-text'>ABOUT</h5>
                 <div className='empty-space-topbar'></div>
+                <Link to='/'>
                 <h3 className='small-text'>Back</h3>
+                </Link>
             </div>
+            <Outlet/>
             <div className='empty-space'></div>
             <div className='content about'>
                 <Card image={personal} text="I am a fifth year computing student at Queen's University, specializing in software design. I am proficient in many different programming languages and also have experience in both web development and game design."/>

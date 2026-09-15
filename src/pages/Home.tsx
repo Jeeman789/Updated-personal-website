@@ -7,25 +7,31 @@ function Home(){
     return(
         <div className='container-grounds'>
             <div className='background'>
-                <div id='about-button'>
-                    <Link to='/About' className='big-text'>
-                        ABOUT
+                <Link to='/About' id='about-link'>
+                    <div id='about-button'>
+                        <h5 className='big-text'>
+                            ABOUT
+                        </h5>
+                    </div>
+                </Link>
+                <div id='right-side'>
+                    <Link to='/Projects' id='projects-link'>
+                        <div id='projects-button'>
+                            <h4 className="medium-text right-text">
+                                PROJECTS
+                            </h4>
+                        </div>
+                    </Link>
+                    <Link to='/Contact' id='contact-link'>
+                        <div id='contact-button'>
+                            <h4 className="medium-text right-text">
+                                CONTACT
+                            </h4>
+                        </div>
                     </Link>
                 </div>
-                <div id='right-side'>
-                    <div id='projects-button'>
-                        <Link to='/Projects' className="medium-text right-text">
-                            PROJECTS
-                        </Link>
-                    </div>
-                    <div id='contact-button'>
-                        <Link to='/Contact' className="medium-text right-text">
-                            CONTACT
-                        </Link>
-                    </div>
-                </div>
-                <Outlet />
             </div>
+            <Outlet />
             <div className='foreground'>
                 <div className='circle'>
                     <div id='title'>

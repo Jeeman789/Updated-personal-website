@@ -1,6 +1,7 @@
 import '../css/Contact.css'
 import '../css/Other_Pages.css'
 import '../css/Text.css'
+import { Outlet, Link } from 'react-router';
 
 function Contact(){
     return(
@@ -8,8 +9,11 @@ function Contact(){
             <div className='top-bar contact'>
                 <h5 className='big-text'>CONTACT</h5>
                 <div className='empty-space-topbar'></div>
+                <Link to='/'>
                 <h3 className='small-text'>Back</h3>
+                </Link>
             </div>
+            <Outlet/>
             <div className='empty-space'></div>
             <div className='content-o contact'>
                 <form id='contact-form' action='/send-email' method='POST'>

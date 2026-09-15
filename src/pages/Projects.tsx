@@ -1,6 +1,7 @@
 import '../css/Projects.css'
 import '../css/Text.css'
 import '../css/Other_Pages.css'
+import { Outlet, Link } from 'react-router';
 import Card from '../components/Card'
 import godot from '../assets/entry-images/godot.png'
 import aws from '../assets/entry-images/aws.png'
@@ -14,8 +15,11 @@ function Projects(){
             <div className='top-bar projects'>
                 <h5 className='big-text'>PROJECTS</h5>
                 <div className='empty-space-topbar'></div>
+                <Link to='/'>
                 <h3 className='small-text'>Back</h3>
+                </Link>
             </div>
+            <Outlet/>
             <div className='empty-space'></div>
             <div className='content projects'>
                 <Card image={godot} text="- Made a 2D platformer taking place in space with zero gravity mechanics <br>
