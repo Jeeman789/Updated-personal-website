@@ -6,17 +6,17 @@ import { Outlet, Link } from 'react-router';
 import { useState } from 'react';
 
 function Home(){
-    const [imageState, setImageState] = useState(carfax1);
+    // const [imageState, setImageState] = useState(carfax1);
 
-    const changeImage = () => {
+    // const changeImage = () => {
         
-    }
+    // }
 
     return(
         <div className='container-grounds'>
             <div className='background'>
                 <Link to='/About' id='about-link'>
-                    <div id='about-button' onMouseEnter={}>
+                    <div id='about-button' className='button'>
                         <h5 className='big-text'>
                             ABOUT
                         </h5>
@@ -24,14 +24,14 @@ function Home(){
                 </Link>
                 <div id='right-side'>
                     <Link to='/Projects' id='projects-link'>
-                        <div id='projects-button'>
+                        <div id='projects-button' className='button'>
                             <h4 className="medium-text right-text">
                                 PROJECTS
                             </h4>
                         </div>
                     </Link>
                     <Link to='/Contact' id='contact-link'>
-                        <div id='contact-button'>
+                        <div id='contact-button' className='button'>
                             <h4 className="medium-text right-text">
                                 CONTACT
                             </h4>

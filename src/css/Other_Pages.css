@@ -25,6 +25,14 @@
     height: 20%;
 }
 
+.small-text{
+    transition: font-size 0.3s ease-in-out;
+}
+
+.small-text:hover{
+    font-size: 70px;
+}
+
 .content{
     box-sizing: border-box;
     width: 100%;
