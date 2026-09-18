@@ -10,6 +10,7 @@ function Contact(){
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        const form = event.currentTarget;
         setStatus('');
         setIsSending(true);
 
@@ -24,14 +25,23 @@ function Contact(){
                 body: JSON.stringify({ name, message }),
             });
 
-            const result = await response.json();
+            const responseText = await response.text();
+            let result: { message?: string } = {};
 
-            if (!response.ok) {
-                throw new Error(result.message);
+            if (responseText.trim()) {
+                try {
+                    result = JSON.parse(responseText) as { message?: string };
+                } catch {
+                    throw new Error(`The server returned an invalid response (${response.status}).`);
+                }
             }
 
-            setStatus(result.message);
-            event.currentTarget.reset();
+            if (!response.ok) {
+                throw new Error(result.message ?? `Request failed (${response.status}).`);
+            }
+
+            setStatus(result.message ?? 'Message sent successfully.');
+            form.reset();
         } catch (error) {
             setStatus(error instanceof Error ? error.message : 'Unable to send message.');
         } finally {
