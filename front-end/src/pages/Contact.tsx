@@ -16,13 +16,14 @@ function Contact(){
 
         const formData = new FormData(event.currentTarget);
         const name = formData.get('name');
+        const email = formData.get('email');
         const message = formData.get('message');
 
         try {
             const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, message }),
+                body: JSON.stringify({ name, email, message }),
             });
 
             const responseText = await response.text();
@@ -66,6 +67,8 @@ function Contact(){
                     <fieldset id='fields'>
                         <label htmlFor="name">Name</label>
                         <input id="name" type="text" name='name' required />
+                        <label htmlFor="name">Email</label>
+                        <input id="name" type="text" name='email' required />
                         <label htmlFor="message">Message</label>
                         <textarea id='message' name='message' rows={4} cols={50} required></textarea>
                     </fieldset>

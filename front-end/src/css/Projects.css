@@ -1,7 +1,10 @@
 @import url('https://googleapis.com');
 
 .projects-back{
-    background-color: #ACCEAA;
+    background-image: linear-gradient(#ACCEAA, #ACCEAA), url('../assets/grab\ it\ v.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: 0 -1350px;
     width: 100%;
     min-width: 1200px;
     height: max(100vh, 700px);

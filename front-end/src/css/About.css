@@ -1,7 +1,10 @@
 @import url('https://googleapis.com');
 
 .about-back{
-    background-color: #FF8D8D;
+    background-image: linear-gradient(#FF8D8D, #FF8D8D), url('../assets/Carfax\ team.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: 0 -170px;
     width: 100%;
     min-width: 1200px;
     height: max(100vh, 700px);

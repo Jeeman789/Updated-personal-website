@@ -2,6 +2,9 @@
 
 .contact-back{
     background-color: #E8DA96;
+
+    background: repeating-linear-gradient(-45deg, #E8DA96 0px, #E8DA96 5px, transparent 5px, transparent 8px), repeating-linear-gradient(45deg, #E8DA96 0px, #E8DA96 5px, transparent 5px, transparent 8px), linear-gradient(#D0B219,#D0B219);
+
     width: 100%;
     min-width: 1200px;
     height: max(100vh, 700px);
@@ -45,6 +48,10 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
+
+    h3:hover{
+        font-size: 50px;
+    }
 }
 
 #fields{
@@ -83,7 +90,7 @@
 
 #send-button{
     width: 15%;
-    height: 8%;
+    height: 20%;
 
     background-color: white;
     border: 10px solid #000000;
