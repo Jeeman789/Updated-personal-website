@@ -1,17 +1,9 @@
 import '../css/Text.css'
 import '../css/Home.css'
 import '../css/Links.css'
-import carfax1 from '../assets/Carfax team.png'
 import { Outlet, Link } from 'react-router';
-import { useState } from 'react';
 
 function Home(){
-    // const [imageState, setImageState] = useState(carfax1);
-
-    // const changeImage = () => {
-        
-    // }
-
     return(
         <div className='container-grounds'>
             <div className='background'>

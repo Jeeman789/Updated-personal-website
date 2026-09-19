@@ -1,6 +1,11 @@
 import './comp_css/Card.css'
 
-const Card = (props) => {
+type CardProps = {
+    image: string;
+    text: string;
+};
+
+const Card = (props: CardProps) => {
     return(
         <div className='card-container'>
             <div className='card-background'>
