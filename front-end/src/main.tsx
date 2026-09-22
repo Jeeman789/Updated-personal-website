@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import './css/index.css'
 import Home from './pages/Home.tsx'
 import About from './pages/About.tsx'
@@ -8,7 +8,7 @@ import Contact from './pages/Contact.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
@@ -17,6 +17,6 @@ createRoot(document.getElementById('root')!).render(
           <Route path="Contact" element={<Contact />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </>
 )
