@@ -4,6 +4,8 @@ import '../css/Text.css'
 import { Outlet, Link } from 'react-router';
 import { useState } from 'react';
 
+const apiUrl = import.meta.env.VITE_API_URL ?? 'https://updated-personal-website-9w6v.onrender.com';
+
 function Contact(){
     const [status, setStatus] = useState('');
     const [isSending, setIsSending] = useState(false);
@@ -20,7 +22,7 @@ function Contact(){
         const message = formData.get('message');
 
         try {
-            const response = await fetch('/api/contact', {
+            const response = await fetch(`${apiUrl}/api/contact`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, message }),

@@ -4,6 +4,18 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.use((req, res, next) => {
+  const allowedOrigin = process.env.FRONTEND_URL || 'https://jeeman789.github.io';
+  res.header('Access-Control-Allow-Origin', allowedOrigin);
+  res.header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
 app.use(express.json());
 
 const transporter = nodemailer.createTransport({
